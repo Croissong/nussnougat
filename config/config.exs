@@ -6,12 +6,12 @@
 use Mix.Config
 
 # Configures the endpoint
-config :l, L.Endpoint,
+config :nussnougat, Nussnougat.Endpoint,
   url: [host: "localhost"],
   root: Path.dirname(__DIR__),
-  secret_key_base: "0xG1diKVjDpltFoM7Xt0IJgBQ579hsJAVVIkNwq89HZrIiXi1SQ8GusmyWTxoKpr",
-  render_errors: [accepts: ~w(json)],
-  pubsub: [name: L.PubSub,
+  secret_key_base: "+03WGsMlaA+ORrGQIK+NX7pLNVeIHTu489jndXe3k+7fHSlvjJEACtdabG2oCFtZ",
+  render_errors: [accepts: ~w(html json)],
+  pubsub: [name: Nussnougat.PubSub,
            adapter: Phoenix.PubSub.PG2]
 
 # Configures Elixir's Logger

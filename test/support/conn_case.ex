@@ -1,4 +1,4 @@
-defmodule L.ConnCase do
+defmodule Nussnougat.ConnCase do
   @moduledoc """
   This module defines the test case to be used by
   tests that require setting up a connection.
@@ -20,20 +20,20 @@ defmodule L.ConnCase do
       # Import conveniences for testing with connections
       use Phoenix.ConnTest
 
-      alias L.Repo
+      alias Nussnougat.Repo
       import Ecto.Model
       import Ecto.Query, only: [from: 2]
 
-      import L.Router.Helpers
+      import Nussnougat.Router.Helpers
 
       # The default endpoint for testing
-      @endpoint L.Endpoint
+      @endpoint Nussnougat.Endpoint
     end
   end
 
   setup tags do
     unless tags[:async] do
-      Ecto.Adapters.SQL.restart_test_transaction(L.Repo, [])
+      Ecto.Adapters.SQL.restart_test_transaction(Nussnougat.Repo, [])
     end
 
     :ok

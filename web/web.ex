@@ -1,12 +1,12 @@
-defmodule L.Web do
+defmodule Nussnougat.Web do
   @moduledoc """
   A module that keeps using definitions for controllers,
   views and so on.
 
   This can be used in your application as:
 
-      use L.Web, :controller
-      use L.Web, :view
+      use Nussnougat.Web, :controller
+      use Nussnougat.Web, :view
 
   The definitions below will be executed for every view,
   controller, etc, so keep them short and clean, focused
@@ -29,11 +29,11 @@ defmodule L.Web do
     quote do
       use Phoenix.Controller
 
-      alias L.Repo
+      alias Nussnougat.Repo
       import Ecto.Model
       import Ecto.Query, only: [from: 1, from: 2]
 
-      import L.Router.Helpers
+      import Nussnougat.Router.Helpers
     end
   end
 
@@ -44,7 +44,10 @@ defmodule L.Web do
       # Import convenience functions from controllers
       import Phoenix.Controller, only: [get_csrf_token: 0, get_flash: 2, view_module: 1]
 
-      import L.Router.Helpers
+      # Use all HTML functionality (forms, tags, etc)
+      use Phoenix.HTML
+
+      import Nussnougat.Router.Helpers
     end
   end
 
@@ -58,7 +61,7 @@ defmodule L.Web do
     quote do
       use Phoenix.Channel
 
-      alias L.Repo
+      alias Nussnougat.Repo
       import Ecto.Model
       import Ecto.Query, only: [from: 1, from: 2]
     end

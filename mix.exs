@@ -1,8 +1,8 @@
-defmodule L.Mixfile do
+defmodule Nussnougat.Mixfile do
   use Mix.Project
 
   def project do
-    [app: :l,
+    [app: :nussnougat,
      version: "0.0.1",
      elixir: "~> 1.0",
      elixirc_paths: elixirc_paths(Mix.env),
@@ -17,8 +17,8 @@ defmodule L.Mixfile do
   #
   # Type `mix help compile.app` for more information.
   def application do
-    [mod: {L, []},
-     applications: [:phoenix, :cowboy, :logger,
+    [mod: {Nussnougat, []},
+     applications: [:phoenix, :phoenix_html, :cowboy, :logger,
                     :phoenix_ecto, :postgrex]]
   end
 
@@ -33,6 +33,7 @@ defmodule L.Mixfile do
     [{:phoenix, "~> 1.0.3"},
      {:phoenix_ecto, "~> 1.1"},
      {:postgrex, ">= 0.0.0"},
+     {:phoenix_html, "~> 2.1"},
      {:cowboy, "~> 1.0"}]
   end
 

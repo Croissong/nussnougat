@@ -2,7 +2,7 @@ use Mix.Config
 
 # We don't run a server during test. If one is required,
 # you can enable the server option below.
-config :l, L.Endpoint,
+config :nussnougat, Nussnougat.Endpoint,
   http: [port: 4001],
   server: false
 
@@ -10,10 +10,10 @@ config :l, L.Endpoint,
 config :logger, level: :warn
 
 # Configure your database
-config :l, L.Repo,
+config :nussnougat, Nussnougat.Repo,
   adapter: Ecto.Adapters.Postgres,
   username: "postgres",
   password: "postgres",
-  database: "l_test",
+  database: "nussnougat_test",
   hostname: "localhost",
   pool: Ecto.Adapters.SQL.Sandbox

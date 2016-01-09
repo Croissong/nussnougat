@@ -35,7 +35,7 @@ webpackConfig.entry = {
 // Bundle Output
 // ------------------------------------
 webpackConfig.output = {
-  filename: `[name].[${config.compiler_hash_type}].js`,
+  filename: `[name].js`,
   path: paths.base(config.dir_dist),
   publicPath: config.compiler_public_path
 }
@@ -180,7 +180,7 @@ if (!config.compiler_enable_hmr) {
   })
 
   webpackConfig.plugins.push(
-    new ExtractTextPlugin('[name].[contenthash].css', {
+    new ExtractTextPlugin('[name].css', {
       allChunks: true
     })
   )

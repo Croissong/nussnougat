@@ -1,14 +1,14 @@
-defmodule L.Endpoint do
-  use Phoenix.Endpoint, otp_app: :l
+defmodule Nussnougat.Endpoint do
+  use Phoenix.Endpoint, otp_app: :nussnougat
 
-  socket "/socket", L.UserSocket
+  socket "/socket", Nussnougat.UserSocket
 
   # Serve at "/" the static files from "priv/static" directory.
   #
   # You should set gzip to true if you are running phoenix.digest
   # when deploying your static files in production.
   plug Plug.Static,
-    at: "/", from: :l, gzip: false,
+    at: "/", from: :nussnougat, gzip: false,
     only: ~w(css fonts images js favicon.ico robots.txt)
 
   # Code reloading can be explicitly enabled under the
@@ -30,8 +30,8 @@ defmodule L.Endpoint do
 
   plug Plug.Session,
     store: :cookie,
-    key: "_l_key",
+    key: "_nussnougat_key",
     signing_salt: "wT+HyClC"
 
-  plug L.Router
+  plug Nussnougat.Router
 end
