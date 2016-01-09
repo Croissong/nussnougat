@@ -12,7 +12,7 @@ const config = {
   // ----------------------------------
   path_base  : path.resolve(__dirname, '../'),
   dir_client : 'src',
-  dir_dist   : 'dist',
+  dir_dist   : '../../priv/static/js',
   dir_server : 'server',
   dir_test   : 'tests',
 
@@ -84,7 +84,7 @@ config.globals = {
 // ------------------------------------
 // Validate Vendor Dependencies
 // ------------------------------------
-const pkg = require('../package.json')
+const pkg = require('../../../package.json')
 
 config.compiler_vendor = config.compiler_vendor
   .filter(dep => {
