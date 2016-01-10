@@ -10,7 +10,7 @@
   "scripts": {
     "clean": "rm -rf dist",
     "compile": "node -r dotenv/config --harmony web/react/bin/compile",
-    "phoenix_deploy": "mix deps.get --only prod && MIX_ENV=prod mix compile && NODE_ENV=production npm run compile && MIX_ENV=prod mix phoenix.digest && PORT=80 MIX_ENV=prod mix phoenix.server",
+    "phoenix_deploy": "mix deps.get --only prod && MIX_ENV=prod mix compile && NODE_ENV=production npm run compile && MIX_ENV=prod mix phoenix.digest && sudo PORT=80 MIX_ENV=prod mix phoenix.server",
     "lint": "eslint . ./",
     "lint:fix": "npm run lint -- --fix",
     "start": "node -r dotenv/config web/react/bin/server --hot",
