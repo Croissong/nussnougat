@@ -11,10 +11,11 @@ export class HomeView extends React.Component {
   render () {
     return (
       <div className='container text-center'>
-        <h1>Welcome to Nussnougat & Nusspli</h1>
-        <Link to='/croissong'>Nussnougat Croissong || </Link>
-        <Link to='/donkebap'>Doener macht schoener || </Link>
-        <Link to='/counter'>Counter </Link>
+      <h1>Welcome to Nussnougat & Nusspli</h1>
+      <hr />
+      <Link to='/croissong'>Nussnougat Croissong || </Link>
+      <Link to='/donkebap'>Doener macht schoener || </Link>
+      <Link to='/counter'>Counter </Link>
       </div>
     )
   }

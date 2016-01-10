@@ -11,10 +11,11 @@ export class DonkebapView extends React.Component {
   render () {
     return (
       <div className='container text-center'>
-        <h1>Ich esse gerne tuerkisch Pizza</h1>
-        <Link to='/'>Nussnougat || </Link>
-        <Link to='/croissong'>Nussnougat Croissong || </Link>
-        <Link to='/counter'>Counter</Link>
+      <h1>Ich esse gerne tuerkisch Pizza</h1>
+      <hr />
+      <Link to='/'>Nussnougat || </Link>
+      <Link to='/croissong'>Nussnougat Croissong || </Link>
+      <Link to='/counter'>Counter</Link>
       </div>
     )
   }

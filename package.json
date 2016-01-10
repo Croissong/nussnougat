@@ -35,6 +35,8 @@
     "koa": "^1.1.2",
     "koa-connect-history-api-fallback": "^0.3.0",
     "koa-static": "^1.5.2",
+    "postcss-bem": "^0.4.1",
+    "postcss-nested": "^1.0.0",
     "react": "^0.14.0",
     "react-dom": "^0.14.0",
     "react-photo-gallery": "^3.0.3",

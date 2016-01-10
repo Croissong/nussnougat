@@ -1,5 +1,7 @@
 import webpack from 'webpack'
 import cssnano from 'cssnano'
+import cssbem from 'postcss-bem'
+import cssnested from 'postcss-nested'
 import HtmlWebpackPlugin from 'html-webpack-plugin'
 import ExtractTextPlugin from 'extract-text-webpack-plugin'
 import config from '../config'
@@ -148,7 +150,18 @@ webpackConfig.postcss = [
     discardComments: {
       removeAll: true
     }
-  })
+  }),
+  cssbem({
+    defaultNamespace: undefined, // default namespace to use, none by default
+    style: 'suit', // suit or bem, suit by default,
+    separators: {
+        descendent: '__' // overwrite any default separator for chosen style
+    },
+    shortcuts: {
+        utility: 'util' //override at-rule name
+    }
+  }),
+  cssnested()
 ]
 
 // File loaders

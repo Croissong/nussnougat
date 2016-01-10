@@ -16,6 +16,7 @@ export class CroissongView extends React.Component {
       <div className={classes['gallery']}>
         <CroissongGallery />
       </div>
+      <hr />
       <Link to='/'>Nussnougat || </Link>
       <Link to='/donkebap'>Doener macht schoener ||</Link>
       <Link to='/counter'>Counter</Link>
