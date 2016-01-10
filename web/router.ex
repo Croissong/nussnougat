@@ -19,6 +19,7 @@ defmodule Nussnougat.Router do
     get "/", PageController, :index
 		get "/croissong", PageController, :index
 		get "/donkebap", PageController, :index
+		get "/counter", PageController, :index
   end
 
   # Other scopes may use custom stacks.
