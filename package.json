@@ -10,8 +10,8 @@
   "scripts": {
     "clean": "rm -rf dist",
     "compile": "node -r dotenv/config --harmony web/react/bin/compile",
-      "phoenix_compile": "mix deps.get --only prod && MIX_ENV=prod mix compile && NODE_ENV=production npm run compile && MIX_ENV=prod mix phoenix.digest",
-      "phoenix_start": "PORT=80 MIX_ENV=prod mix phoenix.server",
+    "phoenix_compile": "mix deps.get --only prod && MIX_ENV=prod mix compile && NODE_ENV=production npm run compile && MIX_ENV=prod mix phoenix.digest",
+    "phoenix_start": "PORT=80 MIX_ENV=prod mix phoenix.server",
     "lint": "eslint . ./",
     "lint:fix": "npm run lint -- --fix",
     "start": "node -r dotenv/config web/react/bin/server --hot",
@@ -37,6 +37,7 @@
     "koa-static": "^1.5.2",
     "react": "^0.14.0",
     "react-dom": "^0.14.0",
+    "react-photo-gallery": "^3.0.3",
     "react-redux": "^4.0.0",
     "react-router": "^1.0.1",
     "redux": "^3.0.0",

@@ -32,7 +32,7 @@ if (config.compiler_enable_hmr) {
   // these files. This middleware doesn't need to be enabled outside
   // of development since this directory will be copied into ~/dist
   // when the application is compiled.
-  app.use(serve(paths.client('static')))
+  app.use(serve(paths.client('../../../priv/static')))
 } else {
   debug(
     'Server is being run outside of live development mode. This starter kit ' +
