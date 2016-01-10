@@ -14,7 +14,7 @@ const config = {
   dir_client : 'src',
   dir_dist   : '../../priv/static/js',
   dir_server : 'server',
-  dir_test   : 'tests',
+  dir_test   : 'web/react/tests',
 
   // ----------------------------------
   // Server Configuration

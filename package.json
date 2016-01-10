@@ -17,7 +17,7 @@
     "dev": "nodemon -r dotenv/config web/react/bin/server --hot",
     "dev:nw": "npm run dev -- --nw",
     "dev:no-debug": "npm run dev -- --no_debug",
-    "test": "node -r dotenv/config ./node_modules/karma/bin/karma start bin/karma.js",
+    "test": "node -r dotenv/config ./node_modules/karma/bin/karma start web/react/bin/karma.js",
     "test:dev": "npm run test -- --watch",
     "deploy": "npm run test && npm run clean && npm run compile"
   },
