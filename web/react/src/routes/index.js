@@ -8,12 +8,16 @@ import { Route, IndexRoute, Redirect } from 'react-router'
 // your current file is.
 import CoreLayout from 'layouts/CoreLayout/CoreLayout'
 import HomeView from 'views/HomeView/HomeView'
-import NotFoundView from 'views/NotFoundView/NotFoundView'
+import DonkebapView from 'views/DonkebapView/DonkebapView'
+import CroissongView from 'views/CroissongView/CroissongView'
+import CounterView from 'views/CounterView/CounterView'
 
 export default (
   <Route path='/' component={CoreLayout}>
     <IndexRoute component={HomeView} />
-    <Route path='/404' component={NotFoundView} />
+    <Route path='donkebap' component={DonkebapView} />
+    <Route path='croissong' component={CroissongView} />
+    <Route path='counter' component={CounterView} />
     <Redirect from='*' to='/404' />
   </Route>
 )
