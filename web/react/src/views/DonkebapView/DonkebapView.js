@@ -11,7 +11,7 @@ export class DonkebapView extends React.Component {
   render () {
     return (
       <div className='container text-center'>
-      <h1>Ich esse gerne tuerkisch Pizza</h1>
+      <h1>Ich esse gerne türkisch Pizza</h1>
       <Footer className={styles['footer']} Name/>
       </div>
     )

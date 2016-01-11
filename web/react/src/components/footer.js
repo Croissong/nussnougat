@@ -17,6 +17,6 @@ export default class Footer extends React.Component {
 const LINK_DESC = {
   '/': 'Nussnougat',
   '/croissong': 'Nussnougat Croissong',
-  '/donkebap': 'Doener macht schoener',
+  '/donkebap': 'Döner macht schoener',
   '/counter': 'Counter'
 }

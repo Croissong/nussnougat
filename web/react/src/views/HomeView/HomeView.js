@@ -14,7 +14,7 @@ export class HomeView extends React.Component {
       <h1>Welcome to Nussnougat & Nusspli</h1>
       <hr />
       <Link to='/croissong'>Nussnougat Croissong || </Link>
-      <Link to='/donkebap'>Doener macht schoener || </Link>
+      <Link to='/donkebap'>Döner macht schoener || </Link>
       <Link to='/counter'>Counter </Link>
       </div>
     )
