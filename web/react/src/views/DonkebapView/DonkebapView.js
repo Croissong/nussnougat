@@ -1,7 +1,7 @@
 import React from 'react'
-import { Link } from 'react-router'
 import { connect } from 'react-redux'
-
+import Footer from 'components/footer'
+import styles from './DonkebapView.scss'
 // We define mapStateToProps where we'd normally use
 // the @connect decorator so the data requirements are clear upfront, but then
 // export the decorated component after the main class definition so
@@ -12,10 +12,7 @@ export class DonkebapView extends React.Component {
     return (
       <div className='container text-center'>
       <h1>Ich esse gerne tuerkisch Pizza</h1>
-      <hr />
-      <Link to='/'>Nussnougat || </Link>
-      <Link to='/croissong'>Nussnougat Croissong || </Link>
-      <Link to='/counter'>Counter</Link>
+      <Footer className={styles['footer']} Name/>
       </div>
     )
   }
