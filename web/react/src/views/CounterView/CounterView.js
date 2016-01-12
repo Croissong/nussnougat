@@ -46,7 +46,7 @@ export class CounterView extends React.Component {
         <hr />
         <Link to='/'>NussNougat || </Link>
         <Link to='/croissong'>Nussnougat Croissong || </Link>
-        <Link to='/donkebap'>Doener macht schoener || </Link>
+        <Link to='/donkebap'>Döner macht schoener || </Link>
       </div>
     )
   }
