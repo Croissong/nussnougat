@@ -1,8 +1,9 @@
-import React from 'react'
+import React, { PropTypes } from 'react'
 import { connect } from 'react-redux'
 import { Link } from 'react-router'
 import { actions as counterActions } from '../../redux/modules/counter'
-import classes from './CounterView.scss'
+import DuckImage from './Duck.jpg'
+import classes from './CounterView.
 
 // We define mapStateToProps where we'd normally use
 // the @connect decorator so the data requirements are clear upfront, but then
@@ -14,14 +15,21 @@ const mapStateToProps = (state) => ({
 })
 export class CounterView extends React.Component {
   static propTypes = {
-    counter: React.PropTypes.number.isRequired,
-    doubleAsync: React.PropTypes.func.isRequired,
-    increment: React.PropTypes.func.isRequired
+    counter: PropTypes.number.isRequired,
+    doubleAsync: PropTypes.func.isRequired,
+    increment: PropTypes.func.isRequired
   };
 
   render () {
     return (
       <div className='container text-center'>
+        <div className='row'>
+          <div className='col-xs-2 col-xs-offset-5'>
+            <img className={classes.duck}
+                 src={DuckImage}
+                 alt='This is a duck, because Redux.' />
+          </div>
+        </div>
         <h1>Welcome to the React Redux Starter Kit</h1>
         <h2>
           Sample Counter:&nbsp;
